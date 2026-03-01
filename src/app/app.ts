@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+  nombre: string = "Carlos"
+  imagenURL = "/111322335.png"
   protected readonly title = signal('tarea-1');
 }
