@@ -1,3 +1,51 @@
-<h2>Registro de usuario</h2>
+<h2 [ngStyle]="{ color: form.valid ? 'green' : 'black' }">
+    Registro de usuario
+</h2>
 
 <p>Completa el formulario para registrar el usuario</p>
+
+<div>
+    <form [formGroup]="form" (ngSubmit)="enviar()">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" formControlName="nombre" [ngClass]="{
+        'input-error': form.get('nombre')?.invalid && form.get('nombre')?.touched
+      }" />
+
+        @if (form.get("nombre")?.invalid && form.get("nombre")?.touched) {
+        @for (error of errores.nombre; track error.tipo) {
+        @if (form.get('nombre')?.errors?.[error.tipo]) {
+        <p>{{ error.mensaje }}</p>
+        }
+        }
+        }
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email" [ngClass]="{
+        'input-error': form.get('email')?.invalid && form.get('email')?.touched
+      }" />
+
+        @if (form.get("email")?.invalid && form.get("email")?.touched) {
+        @for (error of errores.email; track error.tipo) {
+        @if (form.get('email')?.errors?.[error.tipo]) {
+        <p>{{ error.mensaje }}</p>
+        }
+        }
+        }
+
+        <br>
+
+        <label for="mensaje">Mensaje:</label>
+        <input type="text" formControlName="mensaje" />
+        @if (form.get("mensaje")?.invalid && form.get("mensaje")?.touched){
+        <p>Mensaje invalido</p>
+        }
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+    @if (formEnviado) {
+    <p>¡Formulario enviado con éxito!</p>
+    }
+</div>
