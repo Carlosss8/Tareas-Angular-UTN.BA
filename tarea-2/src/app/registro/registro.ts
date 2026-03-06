@@ -39,6 +39,7 @@ export class Registro {
       this.usuarios.push(this.form.value);
       this.form.reset();
       this.formEnviado = true;
+      console.log(this.usuarios)
     } else {
       this.form.markAllAsTouched();
     }

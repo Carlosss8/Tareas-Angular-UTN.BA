@@ -43,9 +43,17 @@
         <p>Mensaje invalido</p>
         }
         <br>
-        <button type="submit">Registrar</button>
+        <button [disabled]="form.invalid" type="submit">Registrar</button>
     </form>
     @if (formEnviado) {
     <p>¡Formulario enviado con éxito!</p>
     }
+
+    <ul>
+        @for (usuario of usuarios; track usuario.email) {
+        <li>{{usuario.nombre}}</li>
+        <li>{{usuario.email}}</li>
+        }
+    </ul>
+
 </div>
