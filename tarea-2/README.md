@@ -1,59 +1,43 @@
-# Tarea2
+## TAREA N°2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+## DECRIPCION
 
-## Development server
+Aplicación web básica desarrollada con Angular que implementa un formulario reactivo utilizando Reactive Forms y FormBuilder.
+El objetivo del proyecto es comprender el funcionamiento de los formularios en Angular, aplicando validaciones, control de estados y directivas estructurales modernas. se trabajo los conceptos fundamentales como creacion de formularios, validaciones, directivas (@if, @for), estilos dinamicos (ngclass, ngStyle), etc... y por ultimo manejo de estados.
 
-To start a local development server, run:
+## Lenguajes utilizados
 
-```bash
+- Angular 17
+- TypeScript
+- HTML
+- CSS
+
+## Clonar el repositorio
+## 1. Clonar el repositorio
+
+bash
+git clone https://github.com/Carlosss8/Tareas-Angular-UTN.BA
+
+## 2. Ingresar a la carpeta del proyecto
+
+cd Tareas-Angular-UTN.BA
+
+## 3. Instalar dependencias
+
+npm install
+
+## 4. Ejecutar la aplicación
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## AUTOR
+NOMBRE: Carlos Rodriguez UNIDAD: Modulo 1 - Unidad 2
 
-## Code scaffolding
+## Fuentes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Medium: https://mwiza.medium.com/how-to-find-invalid-form-controls-in-angular-782ba7bbe9d2
 
-```bash
-ng generate component component-name
-```
+- Angular: https://angular.dev/guide/forms/reactive-forms
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Preguntas y dudas con ChatGPT
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Ejercicios y PostData
