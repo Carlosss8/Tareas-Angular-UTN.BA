@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        @for (producto of productos; track producto) {
+        <p>
+            <li>{{producto.title}}
+                {{producto.price | currency: 'USD'}}
+                {{producto.creationAt | date: 'shortDate'}}
+            </li>
+        </p>
+        <br>
+        }
+    </ul>
+</div>
