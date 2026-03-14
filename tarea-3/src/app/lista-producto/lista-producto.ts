@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Productos } from '../services/productos';
 import { CurrencyPipe, DatePipe } from '@angular/common';
+import { DescuentoPipe } from '../pipes/descuento-pipe';
 
 @Component({
   selector: 'app-lista-producto',
   standalone: true,
-  imports: [CurrencyPipe, DatePipe],
+  imports: [CurrencyPipe, DatePipe, DescuentoPipe],
   templateUrl: './lista-producto.html',
   styleUrl: './lista-producto.css',
 })

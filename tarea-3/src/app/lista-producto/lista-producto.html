@@ -6,6 +6,10 @@
                 {{producto.price | currency: 'USD'}}
                 {{producto.creationAt | date: 'shortDate'}}
             </li>
+            <li>
+                <p>Precio con descuento: {{producto.price | descuento:10 | currency}}</p>
+
+            </li>
         </p>
         <br>
         }
